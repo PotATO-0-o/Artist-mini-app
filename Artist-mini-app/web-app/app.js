@@ -44,7 +44,6 @@ function renderLessonList() {
 function renderSingleLesson(id) {
     const lesson = currentLessons.find(l => l.id === id);
     
-    // Отправка прогресса при открытии урока
     if (tg.platform !== "unknown") {
         try {
             tg.sendData(JSON.stringify({
