@@ -9,7 +9,7 @@ from aiogram.filters import Command
 from aiogram.types import WebAppInfo, InlineKeyboardMarkup, InlineKeyboardButton
 from dotenv import load_dotenv
 
-# Настройка логирования
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -21,7 +21,7 @@ CHANNEL_LINK = "https://t.me/TFArtist"
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
-# Константы
+
 PROGRESS_FILE = Path("progress.json")
 LESSONS = [
     {"id": 1, "title": "Рисование кота"},
